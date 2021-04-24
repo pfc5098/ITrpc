@@ -1,0 +1,31 @@
+---
+title: "Configure Redshift Information"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Configure Redshift Information}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Step 1.  
+
+Run `usethis::edit_r_environ()` in the R console to open the .Renviron file.
+
+## Step 2.  
+
+Inside the .Renviron file, enter:
+
+```{r eval=FALSE}
+REDSHIFT_USER = username
+REDSHIFT_PASSWORD = password
+REDSHIFT_HOST = host_ip_address
+REDSHIFT_PORT = port_number
+REDSHIFT_DBNAME = database_name
+```
