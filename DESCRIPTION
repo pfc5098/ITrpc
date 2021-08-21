@@ -16,7 +16,8 @@ URL: https://github.com/pfc5098/ITrpc
 BugReports: https://github.com/pfc5098/ITrpc/issues
 Imports: 
     DBI,
-    RPostgreSQL
+    RPostgreSQL,
+    glue
 Suggests: 
     knitr,
     rmarkdown
